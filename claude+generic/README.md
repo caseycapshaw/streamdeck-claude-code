@@ -58,7 +58,7 @@ For each: drag a **Text** action onto the button, paste the command, and check *
 | ACCEPT | Text | `y` + Enter | Accepts when Claude asks for permission |
 | EXIT | Hotkey | `Ctrl+D` | Sends EOF to exit Claude Code |
 | CLR SCR | Hotkey | `Ctrl+L` | Clears the terminal screen |
-| RETURN | Hotkey | `Return` | Sends the Return/Enter key |
+| RETURN | Text | Empty text + Enter | Sends the Return/Enter key |
 
 For STOP, EXIT, and CLR SCR: drag a **Hotkey** action onto the button, then click the hotkey field and press the key combination on your keyboard to record it.
 
