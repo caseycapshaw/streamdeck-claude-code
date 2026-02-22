@@ -271,22 +271,8 @@ def build_actions():
         img("3,2"),
     )
 
-    # 4,2: Return/Enter
-    actions["4,2"] = make_hotkey_action(
-        [
-            {
-                "KeyCmd": False,
-                "KeyCtrl": False,
-                "KeyModifiers": 0,
-                "KeyOption": False,
-                "KeyShift": False,
-                "NativeCode": 36,       # macOS kVK_Return
-                "QTKeyCode": 16777220,   # Qt::Key_Return
-                "VKeyCode": 13,          # VK_RETURN
-            }
-        ],
-        img("4,2"),
-    )
+    # 4,2: Return/Enter — Text action with empty text + send Enter
+    actions["4,2"] = make_text_action("", True, img("4,2"))
 
     return actions
 
