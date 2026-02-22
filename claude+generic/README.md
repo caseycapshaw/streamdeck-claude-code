@@ -60,7 +60,7 @@ For each: drag a **Text** action onto the button, paste the command, and check *
 | CLR SCR | Hotkey | `Ctrl+L` | Clears the terminal screen |
 | RETURN | Text | Empty text + Enter | Sends the Return/Enter key |
 
-For STOP, EXIT, and CLR SCR: drag a **Hotkey** action onto the button, then click the hotkey field and press the key combination on your keyboard to record it.
+For STOP and CLR SCR: drag a **Hotkey** action onto the button, then click the hotkey field and press the key combination on your keyboard to record it.
 
 ## Tips
 
