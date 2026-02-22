@@ -202,19 +202,37 @@ def build_actions():
         "claude --dangerously-skip-permissions", "3,0"
     )
     # 4,0: Init Project
-    actions["4,0"] = make_text_action("/init", True, img("4,0"))
+    actions["4,0"] = make_multi_action(
+        [make_text_step("/init", send_enter=False), make_delay(500), make_text_step("", send_enter=True)],
+        img("4,0"),
+    )
 
     # === Row 1: Slash Commands ===
     # 0,1: Clear Context
-    actions["0,1"] = make_text_action("/clear", True, img("0,1"))
+    actions["0,1"] = make_multi_action(
+        [make_text_step("/clear", send_enter=False), make_delay(500), make_text_step("", send_enter=True)],
+        img("0,1"),
+    )
     # 1,1: Compact
-    actions["1,1"] = make_text_action("/compact", True, img("1,1"))
+    actions["1,1"] = make_multi_action(
+        [make_text_step("/compact", send_enter=False), make_delay(500), make_text_step("", send_enter=True)],
+        img("1,1"),
+    )
     # 2,1: Check Cost
-    actions["2,1"] = make_text_action("/cost", True, img("2,1"))
+    actions["2,1"] = make_multi_action(
+        [make_text_step("/cost", send_enter=False), make_delay(500), make_text_step("", send_enter=True)],
+        img("2,1"),
+    )
     # 3,1: Switch Model
-    actions["3,1"] = make_text_action("/model", True, img("3,1"))
+    actions["3,1"] = make_multi_action(
+        [make_text_step("/model", send_enter=False), make_delay(500), make_text_step("", send_enter=True)],
+        img("3,1"),
+    )
     # 4,1: Review PR
-    actions["4,1"] = make_text_action("/code-review", True, img("4,1"))
+    actions["4,1"] = make_multi_action(
+        [make_text_step("/code-review", send_enter=False), make_delay(500), make_text_step("", send_enter=True)],
+        img("4,1"),
+    )
 
     # === Row 2: Controls ===
     # 0,2: Cancel/Stop (Escape)

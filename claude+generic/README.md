@@ -36,7 +36,7 @@ Focus your terminal, then press a button to type the launch command.
 | CONTINUE | Text | `claude -c` + Enter |
 | RESUME | Text | `claude --resume` + Enter |
 | YOLO | Text | `claude --dangerously-skip-permissions` + Enter |
-| INIT | Text | `/init` + Enter |
+| INIT | Multi Action | Text: `/init` → Delay 500ms → Enter |
 
 For each: drag a **Text** action onto the button, paste the command, and check **"Press Enter after pasting"**.
 
@@ -44,11 +44,11 @@ For each: drag a **Text** action onto the button, paste the command, and check *
 
 | Button | Action Type | Config |
 |--------|-----------|--------|
-| CLEAR | Text | `/clear` + Enter |
-| COMPACT | Text | `/compact` + Enter |
-| COST | Text | `/cost` + Enter |
-| MODEL | Text | `/model` + Enter |
-| REVIEW | Text | `/code-review` + Enter |
+| CLEAR | Multi Action | Text: `/clear` → Delay 500ms → Enter |
+| COMPACT | Multi Action | Text: `/compact` → Delay 500ms → Enter |
+| COST | Multi Action | Text: `/cost` → Delay 500ms → Enter |
+| MODEL | Multi Action | Text: `/model` → Delay 500ms → Enter |
+| REVIEW | Multi Action | Text: `/code-review` → Delay 500ms → Enter |
 
 ### Row 3: Controls
 

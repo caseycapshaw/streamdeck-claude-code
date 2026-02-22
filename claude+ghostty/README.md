@@ -44,7 +44,7 @@ Each button opens Ghostty, waits for it to focus, then types a Claude Code launc
 | CONTINUE | Multi Action | Open Ghostty.app → Delay 500ms → Text: `claude -c` + Enter |
 | RESUME | Multi Action | Open Ghostty.app → Delay 500ms → Text: `claude --resume` + Enter |
 | YOLO | Multi Action | Open Ghostty.app → Delay 500ms → Text: `claude --dangerously-skip-permissions` + Enter |
-| INIT | Text | `/init` + Enter |
+| INIT | Multi Action | Text: `/init` → Delay 500ms → Enter |
 
 #### Multi Action Step-by-Step
 
@@ -60,13 +60,13 @@ These assume Ghostty with an active Claude Code session is already focused.
 
 | Button | Action Type | Config |
 |--------|-----------|--------|
-| CLEAR | Text | `/clear` + Enter |
-| COMPACT | Text | `/compact` + Enter |
-| COST | Text | `/cost` + Enter |
-| MODEL | Text | `/model` + Enter |
-| REVIEW | Text | `/code-review` + Enter |
+| CLEAR | Multi Action | Text: `/clear` → Delay 500ms → Enter |
+| COMPACT | Multi Action | Text: `/compact` → Delay 500ms → Enter |
+| COST | Multi Action | Text: `/cost` → Delay 500ms → Enter |
+| MODEL | Multi Action | Text: `/model` → Delay 500ms → Enter |
+| REVIEW | Multi Action | Text: `/code-review` → Delay 500ms → Enter |
 
-For each: drag a **Text** action onto the button, paste the slash command, and check **"Press Enter after pasting"**.
+For each: create a **Multi Action** with three steps: (1) Text with the slash command (no Enter), (2) Delay 500ms, (3) Text with empty text + Enter.
 
 ### Row 3: Controls
 
