@@ -13,7 +13,7 @@ PROFILE_BASE = os.path.expanduser(
 PAGE_ID = "E0C8D94A-585C-4BDC-B467-77EDEBBF464B"
 PAGE_DIR = os.path.join(PROFILE_BASE, "Profiles", PAGE_ID)
 IMAGES_DIR = os.path.join(PAGE_DIR, "Images")
-ICONS_DIR = os.path.expanduser("~/Downloads/streamdeck-claude-code-pixel-icons")
+ICONS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "icons")
 
 # Icon mapping: grid position -> 144px icon filename
 ICONS = {
