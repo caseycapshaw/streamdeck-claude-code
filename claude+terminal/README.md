@@ -74,7 +74,7 @@ For each: drag a **Text** action onto the button, paste the slash command, and c
 |--------|-----------|--------|-------|
 | STOP | Hotkey | `Escape` | Cancels current generation |
 | ACCEPT | Text | `y` + Enter | Accepts when Claude asks for permission |
-| EXIT | Hotkey | `Ctrl+D` | Sends EOF to exit Claude Code |
+| EXIT | Multi Action | Text: `/exit` → Delay 500ms → Enter | Exits Claude Code |
 | CLR SCR | Hotkey | `Ctrl+L` | Clears the terminal screen |
 | RETURN | Text | Empty text + Enter | Sends the Return/Enter key |
 

@@ -237,20 +237,9 @@ def build_actions():
     # 1,2: Accept All (y + Enter) — using Text action for reliability
     actions["1,2"] = make_text_action("y", True, img("1,2"))
 
-    # 2,2: Exit Claude (Ctrl+D)
-    actions["2,2"] = make_hotkey_action(
-        [
-            {
-                "KeyCmd": False,
-                "KeyCtrl": True,
-                "KeyModifiers": 0,
-                "KeyOption": False,
-                "KeyShift": False,
-                "NativeCode": 2,    # macOS kVK_ANSI_D
-                "QTKeyCode": 68,    # Qt::Key_D
-                "VKeyCode": 68,     # VK_D
-            }
-        ],
+    # 2,2: Exit Claude (/exit → Delay 500ms → Enter)
+    actions["2,2"] = make_multi_action(
+        [make_text_step("/exit", send_enter=False), make_delay(500), make_text_step("", send_enter=True)],
         img("2,2"),
     )
 
