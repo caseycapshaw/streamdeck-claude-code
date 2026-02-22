@@ -12,7 +12,7 @@ Unlike the Ghostty and Terminal variants, Row 1 buttons here use **Text** action
 |-------|-------|-------|-------|-------|
 | START | CONTINUE | RESUME | YOLO | INIT |
 | CLEAR | COMPACT | COST | MODEL | REVIEW |
-| STOP | ACCEPT | EXIT | CLR SCR | TEST |
+| STOP | ACCEPT | EXIT | CLR SCR | RETURN |
 
 ## Setup
 
@@ -58,7 +58,7 @@ For each: drag a **Text** action onto the button, paste the command, and check *
 | ACCEPT | Text | `y` + Enter | Accepts when Claude asks for permission |
 | EXIT | Hotkey | `Ctrl+D` | Sends EOF to exit Claude Code |
 | CLR SCR | Hotkey | `Ctrl+L` | Clears the terminal screen |
-| TEST | Text | `/test` + Enter | Runs tests |
+| RETURN | Hotkey | `Return` | Sends the Return/Enter key |
 
 For STOP, EXIT, and CLR SCR: drag a **Hotkey** action onto the button, then click the hotkey field and press the key combination on your keyboard to record it.
 

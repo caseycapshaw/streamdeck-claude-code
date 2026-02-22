@@ -31,7 +31,7 @@ ICONS = {
     "1,2": "12_accept.png",
     "2,2": "13_exit.png",
     "3,2": "14_clrscr.png",
-    "4,2": "15_test.png",
+    "4,2": "16_return.png",
 }
 
 
@@ -271,8 +271,22 @@ def build_actions():
         img("3,2"),
     )
 
-    # 4,2: Run Tests
-    actions["4,2"] = make_text_action("/test", True, img("4,2"))
+    # 4,2: Return/Enter
+    actions["4,2"] = make_hotkey_action(
+        [
+            {
+                "KeyCmd": False,
+                "KeyCtrl": False,
+                "KeyModifiers": 0,
+                "KeyOption": False,
+                "KeyShift": False,
+                "NativeCode": 36,       # macOS kVK_Return
+                "QTKeyCode": 16777220,   # Qt::Key_Return
+                "VKeyCode": 13,          # VK_RETURN
+            }
+        ],
+        img("4,2"),
+    )
 
     return actions
 

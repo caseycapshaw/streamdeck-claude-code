@@ -10,7 +10,7 @@
 |-------|-------|-------|-------|-------|
 | START | CONTINUE | RESUME | YOLO | INIT |
 | CLEAR | COMPACT | COST | MODEL | REVIEW |
-| STOP | ACCEPT | EXIT | CLR SCR | TEST |
+| STOP | ACCEPT | EXIT | CLR SCR | RETURN |
 
 ## Choose Your Terminal
 
